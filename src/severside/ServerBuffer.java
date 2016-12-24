@@ -33,7 +33,7 @@ public class ServerBuffer {
         GoodsService.getGoods_houseService().getGoods();
         NewService.getNewService().getNews();
         PlaceService.getPlaceService().getPlace();
-//
+//.....
 
 
 
