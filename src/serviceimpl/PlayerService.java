@@ -206,7 +206,7 @@ public class PlayerService extends ServiceBase {
         }
     }
 
-    private void getPlayerBuffer(){
+    public void getPlayerBuffer(){
         //获取链接
         Connection conn = getConnection();
 
@@ -223,18 +223,22 @@ public class PlayerService extends ServiceBase {
 
 
             while (rs.next()) {
-                Player player=null;
-                News news = new News();
+                Player player= new Player();
+
                 userDataSet(player, rs);
                 ServerBuffer.hmplayer.put(player.getAdmin_id(), player);
-                System.out.println(player.getAdmin_name());
+//                System.out.println(player.getAdmin_name());
 
             }
+//            System.out.println(ServerBuffer.hmplayer.size());
+//            for(int i = 1 ; i <= ServerBuffer.hmplayer.size() ; i++ ){
+//                System.out.println(ServerBuffer.hmplayer.get(i).getAdmin_name());
+//            }
 
             findUS.close();
             rs.close();
-        }catch (Exception e){
-
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 

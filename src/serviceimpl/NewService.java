@@ -49,7 +49,7 @@ public class NewService extends ServiceBase{
 
 
             }
-            System.out.println(ServerBuffer.hmnews.get(1).getNews_content()+"----------"+ServerBuffer.hmnews.get(41).getNews_content());
+            System.out.println(ServerBuffer.hmnews.get(1).getNews_content()+"----------"+ServerBuffer.hmnews.get(36).getNews_content());
             findUS.close();
             rs.close();
 

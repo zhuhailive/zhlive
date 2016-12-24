@@ -1,104 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c7744b9-22a7-4f24-9aed-2e196a059ab2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastjson-1.2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/icon-114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/icon-128.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/icon-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/icon-256.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/icon-32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/bird-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/bird1-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/bullet_2-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/egg-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/fade_02-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/gun_01-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/gun_01-sheet1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/gun_02-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/gun_02-sheet1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/gun_03-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/gun_03-sheet1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite10-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite11-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite11-sheet1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite12-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite13-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite14-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite16-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite16-sheet1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite17-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite18-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite18-sheet1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite19-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite2-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite20-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite21-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite22-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite23-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite28-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite29-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite3-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite4-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite5-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite6-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite7-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite8-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite8-sheet1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/sprite9-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/start-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/stone-sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/tiledbackground.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/tiledbackground2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/images/tiledbackground4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/loading-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTTP.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hs_err_pid4264.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/connectionpool/ConnFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/connectionpool/ConnPoolConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/connectionpool/MysqlConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Admin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Goods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Goods_house.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Market_goods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/News.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Place.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Player.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceimpl/AdminService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceimpl/GoodsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceimpl/Goods_houseService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceimpl/NewService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceimpl/News_result.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceimpl/PlaceService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceimpl/PlayerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceimpl/ServiceBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/severside/MyHtmlServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/severside/ServerBuffer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/urlservice/AnalyseURL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/urlservice/URLMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/urlservice/UrlEvent_list.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/urlservice/UrlGoods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/urlservice/UrlNews.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/urlservice/UrlPlace.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/urlservice/UrlPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/abc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/connectionpool/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/app.manifest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/c2runtime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/jquery-2.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/offline.appcache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/pathfind.js" />
+    <list default="true" id="7c7744b9-22a7-4f24-9aed-2e196a059ab2" name="Default" comment="修改 服务器开启时把所有player读进缓存">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/serviceimpl/NewService.java" afterPath="$PROJECT_DIR$/src/serviceimpl/NewService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/serviceimpl/PlayerService.java" afterPath="$PROJECT_DIR$/src/serviceimpl/PlayerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/severside/ServerBuffer.java" afterPath="$PROJECT_DIR$/src/severside/ServerBuffer.java" />
     </list>
     <ignored path="HTTP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,25 +27,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UrlNews.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/urlservice/UrlNews.java">
+      <file leaf-file-name="NewService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/serviceimpl/NewService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="508">
+              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <marker date="1482594473845" expanded="true" signature="713:731" ph="SELECT * FRO... news" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serviceimpl/NewService.java">
+      <file leaf-file-name="PlaceService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/serviceimpl/PlaceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="53" column="23" selection-start-line="27" selection-start-column="7" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="342">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
-                <marker date="1482581889721" expanded="true" signature="713:731" ph="SELECT * FRO... news" />
+                <marker date="1482501178693" expanded="true" signature="724:743" ph="SELECT * FRO... place" />
               </folding>
             </state>
           </provider>
@@ -147,8 +54,8 @@
       <file leaf-file-name="MyHtmlServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/severside/MyHtmlServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="337" column="23" selection-start-line="337" selection-start-column="23" selection-end-line="337" selection-end-column="23" />
+            <state relative-caret-position="-493">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,21 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlPlace.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/urlservice/UrlPlace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1653">
-              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UrlPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/urlservice/UrlPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="53" column="60" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+            <state relative-caret-position="432">
+              <caret line="131" column="42" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -179,48 +76,38 @@
       <file leaf-file-name="ServerBuffer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/severside/ServerBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="166">
+              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayerService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/serviceimpl/PlayerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="229" column="57" selection-start-line="229" selection-start-column="57" selection-end-line="229" selection-end-column="57" />
+            <state relative-caret-position="337">
+              <caret line="239" column="22" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
               <folding>
-                <marker date="1482589718179" expanded="true" signature="1034:1071" ph="SELECT * FRO... user" />
-                <marker date="1482589718179" expanded="true" signature="1981:2026" ph="INSERT INTO player... " />
-                <marker date="1482589718179" expanded="true" signature="1981:2033" ph="INSERT INTO player... " />
-                <marker date="1482589718179" expanded="true" signature="1981:2035" ph="INSERT INTO player... " />
-                <marker date="1482589718179" expanded="true" signature="2697:2726" ph="DELETE FROM " />
-                <marker date="1482589718179" expanded="true" signature="2697:2728" ph="DELETE from\... " />
-                <marker date="1482589718179" expanded="true" signature="3337:3520" ph="UPDATE playe... " />
-                <marker date="1482589718179" expanded="true" signature="3570:3599" ph="DELETE FROM " />
-                <marker date="1482589718179" expanded="true" signature="4686:4706" ph="SELECT * FRO... player" />
+                <marker date="1482595182253" expanded="true" signature="1034:1071" ph="SELECT * FRO... user" />
+                <marker date="1482595182253" expanded="true" signature="1981:2026" ph="INSERT INTO player... " />
+                <marker date="1482595182253" expanded="true" signature="1981:2033" ph="INSERT INTO player... " />
+                <marker date="1482595182253" expanded="true" signature="1981:2035" ph="INSERT INTO player... " />
+                <marker date="1482595182253" expanded="true" signature="2697:2726" ph="DELETE FROM " />
+                <marker date="1482595182253" expanded="true" signature="2697:2728" ph="DELETE from\... " />
+                <marker date="1482595182253" expanded="true" signature="3337:3520" ph="UPDATE playe... " />
+                <marker date="1482595182253" expanded="true" signature="3570:3599" ph="DELETE FROM " />
+                <marker date="1482595182253" expanded="true" signature="4685:4705" ph="SELECT * FRO... player" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="URLMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/urlservice/URLMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="News_result.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="News_result.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/serviceimpl/News_result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="228">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -229,11 +116,37 @@
       <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/serviceimpl/AdminService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="114">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding>
                 <marker date="1482565947215" expanded="true" signature="870:927" ph="INSERT INTO admin... " />
                 <marker date="1482565947215" expanded="true" signature="1657:1697" ph="SELECT * FRO... admin" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Goods_houseService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/serviceimpl/Goods_houseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding>
+                <marker date="1482565203906" expanded="true" signature="812:854" ph="SELECT * FRO... goods_house" />
+                <marker date="1482565203906" expanded="true" signature="2056:2100" ph="INSERT INTO goods_house... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/serviceimpl/GoodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1482497897831" expanded="true" signature="733:752" ph="SELECT * FRO... goods" />
               </folding>
             </state>
           </provider>
@@ -305,13 +218,13 @@
         <option value="$PROJECT_DIR$/src/connectionpool/ConnFactory.java" />
         <option value="$PROJECT_DIR$/src/urlservice/UrlNews.java" />
         <option value="$PROJECT_DIR$/src/entity/News.java" />
-        <option value="$PROJECT_DIR$/src/serviceimpl/NewService.java" />
         <option value="$PROJECT_DIR$/src/urlservice/UrlPlace.java" />
         <option value="$PROJECT_DIR$/src/serviceimpl/News_result.java" />
         <option value="$PROJECT_DIR$/src/urlservice/URLMap.java" />
         <option value="$PROJECT_DIR$/src/urlservice/UrlPlayer.java" />
-        <option value="$PROJECT_DIR$/src/serviceimpl/PlayerService.java" />
+        <option value="$PROJECT_DIR$/src/serviceimpl/NewService.java" />
         <option value="$PROJECT_DIR$/src/severside/ServerBuffer.java" />
+        <option value="$PROJECT_DIR$/src/serviceimpl/PlayerService.java" />
       </list>
     </option>
   </component>
@@ -462,6 +375,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewHttp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewHttp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectionpool" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1069,7 +1004,7 @@
       <workItem from="1482557801142" duration="4308000" />
       <workItem from="1482564980360" duration="3801000" />
       <workItem from="1482570709032" duration="5966000" />
-      <workItem from="1482589066260" duration="1165000" />
+      <workItem from="1482589066260" duration="3122000" />
     </task>
     <task id="LOCAL-00001" summary="011">
       <created>1482319976132</created>
@@ -1099,11 +1034,25 @@
       <option name="project" value="LOCAL" />
       <updated>1482590016531</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="工程文件上传">
+      <created>1482590278809</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1482590278809</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改">
+      <created>1482590378583</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1482590378583</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206936000" />
+    <option name="totallyTimeSpent" value="208893000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1120,22 +1069,22 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21888413" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21888413" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.50852877" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2607296" sideWeight="0.52771854" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2306867" sideWeight="0.4445629" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2306867" sideWeight="0.4424307" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16257995" sideWeight="0.4848485" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16257995" sideWeight="0.4848485" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2607296" sideWeight="0.47441363" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2607296" sideWeight="0.47228146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14901665" sideWeight="0.5151515" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1178,7 +1127,10 @@
     <MESSAGE value="011" />
     <MESSAGE value="balabalab" />
     <MESSAGE value="增加了依赖的jar包" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了依赖的jar包" />
+    <MESSAGE value="工程文件上传" />
+    <MESSAGE value="修改" />
+    <MESSAGE value="修改 服务器开启时把所有player读进缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改 服务器开启时把所有player读进缓存" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1202,7 +1154,7 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1211,13 +1163,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTTP.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhuhailive.iml" />
     <entry file="file://$PROJECT_DIR$/src/entity/Item.java" />
     <entry file="file://$PROJECT_DIR$/src/entity/Eventlist.java" />
@@ -1228,6 +1173,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1257,6 +1203,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#204#205#0" expanded="false" />
+            <element signature="e#258#259#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1282,6 +1235,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="59" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,6 +1243,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1296,13 +1251,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16359">
           <caret line="914" column="18" selection-start-line="914" selection-start-column="18" selection-end-line="914" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Market_goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1323,21 +1271,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceimpl/PlaceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1482501178693" expanded="true" signature="724:743" ph="SELECT * FRO... place" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Goods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#603#604#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#673#674#0" expanded="false" />
+            <element signature="e#725#726#0" expanded="false" />
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#807#808#0" expanded="false" />
+            <element signature="e#844#845#0" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#953#954#0" expanded="false" />
+            <element signature="e#985#986#0" expanded="false" />
+            <element signature="e#1016#1017#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
+            <element signature="e#1101#1102#0" expanded="false" />
+            <element signature="e#1128#1129#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#1267#1268#0" expanded="false" />
+            <element signature="e#1299#1300#0" expanded="false" />
+            <element signature="e#1346#1347#0" expanded="false" />
+            <element signature="e#1388#1389#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1346,6 +1307,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,24 +1315,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceimpl/GoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1482497897831" expanded="true" signature="733:752" ph="SELECT * FRO... goods" />
+            <element signature="e#478#479#0" expanded="false" />
+            <element signature="e#511#512#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceimpl/Goods_houseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1392,6 +1342,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,6 +1358,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,6 +1366,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,25 +1375,6 @@
         <state relative-caret-position="114">
           <caret line="6" column="69" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="69" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="e#1025#1026#0" expanded="false" />
-            <element signature="e#1063#1064#0" expanded="false" />
-            <element signature="e#1100#1101#0" expanded="false" />
-            <element signature="e#1136#1137#0" expanded="false" />
-            <element signature="e#1191#1192#0" expanded="false" />
-            <element signature="e#1241#1242#0" expanded="false" />
-            <element signature="e#1280#1281#0" expanded="false" />
-            <element signature="e#1315#1316#0" expanded="false" />
-            <element signature="e#1371#1372#0" expanded="false" />
-            <element signature="e#1419#1420#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1470,56 +1404,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceimpl/NewService.java">
+    <entry file="file://$PROJECT_DIR$/src/serviceimpl/ddd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="53" column="23" selection-start-line="27" selection-start-column="7" selection-end-line="53" selection-end-column="23" />
+        <state relative-caret-position="95">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
-            <marker date="1482581889721" expanded="true" signature="713:731" ph="SELECT * FRO... news" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Market_goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#376#377#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/urlservice/UrlPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="53" column="60" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+        <state relative-caret-position="432">
+          <caret line="131" column="42" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceimpl/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="229" column="57" selection-start-line="229" selection-start-column="57" selection-end-line="229" selection-end-column="57" />
-          <folding>
-            <marker date="1482589718179" expanded="true" signature="1034:1071" ph="SELECT * FRO... user" />
-            <marker date="1482589718179" expanded="true" signature="1981:2026" ph="INSERT INTO player... " />
-            <marker date="1482589718179" expanded="true" signature="1981:2033" ph="INSERT INTO player... " />
-            <marker date="1482589718179" expanded="true" signature="1981:2035" ph="INSERT INTO player... " />
-            <marker date="1482589718179" expanded="true" signature="2697:2726" ph="DELETE FROM " />
-            <marker date="1482589718179" expanded="true" signature="2697:2728" ph="DELETE from\... " />
-            <marker date="1482589718179" expanded="true" signature="3337:3520" ph="UPDATE playe... " />
-            <marker date="1482589718179" expanded="true" signature="3570:3599" ph="DELETE FROM " />
-            <marker date="1482589718179" expanded="true" signature="4686:4706" ph="SELECT * FRO... player" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/severside/MyHtmlServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="337" column="23" selection-start-line="337" selection-start-column="23" selection-end-line="337" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceimpl/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="114">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding>
             <marker date="1482565947215" expanded="true" signature="870:927" ph="INSERT INTO admin... " />
             <marker date="1482565947215" expanded="true" signature="1657:1697" ph="SELECT * FRO... admin" />
@@ -1527,19 +1453,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/severside/ServerBuffer.java">
+    <entry file="file://$PROJECT_DIR$/src/serviceimpl/Goods_houseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="190">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <marker date="1482565203906" expanded="true" signature="812:854" ph="SELECT * FRO... goods_house" />
+            <marker date="1482565203906" expanded="true" signature="2056:2100" ph="INSERT INTO goods_house... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceimpl/News_result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="228">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceimpl/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1482497897831" expanded="true" signature="733:752" ph="SELECT * FRO... goods" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceimpl/PlaceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <marker date="1482501178693" expanded="true" signature="724:743" ph="SELECT * FRO... place" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/severside/MyHtmlServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/severside/ServerBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceimpl/NewService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <marker date="1482594473845" expanded="true" signature="713:731" ph="SELECT * FRO... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceimpl/PlayerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="239" column="22" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
+          <folding>
+            <marker date="1482595182253" expanded="true" signature="1034:1071" ph="SELECT * FRO... user" />
+            <marker date="1482595182253" expanded="true" signature="1981:2026" ph="INSERT INTO player... " />
+            <marker date="1482595182253" expanded="true" signature="1981:2033" ph="INSERT INTO player... " />
+            <marker date="1482595182253" expanded="true" signature="1981:2035" ph="INSERT INTO player... " />
+            <marker date="1482595182253" expanded="true" signature="2697:2726" ph="DELETE FROM " />
+            <marker date="1482595182253" expanded="true" signature="2697:2728" ph="DELETE from\... " />
+            <marker date="1482595182253" expanded="true" signature="3337:3520" ph="UPDATE playe... " />
+            <marker date="1482595182253" expanded="true" signature="3570:3599" ph="DELETE FROM " />
+            <marker date="1482595182253" expanded="true" signature="4685:4705" ph="SELECT * FRO... player" />
+          </folding>
         </state>
       </provider>
     </entry>
