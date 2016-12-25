@@ -16,14 +16,14 @@ public class URLMap {
         //PlayerUrl
         URLs.put("/login","UrlPlayer#adminLoginControllor");//made
         URLs.put("/sign","UrlPlayer#adminsignControllor");//made
-        URLs.put("/updatacash","UrlPlayer#updataCash");
+        URLs.put("/updatacash","UrlPlayer#updataCash");//made
         URLs.put("/updatadebt","UrlPlayer#updataDebt");//made
-        URLs.put("/updatabank","UrlPlayer#updataBank");
-        URLs.put("/updatahealth","UrlPlayer#updataHealth");
-        URLs.put("/updatareputation","UrlPlayer#updataReputation");
-        URLs.put("/updatagoods_contain","UrlPlayer#updataGoods_contain");
-        URLs.put("/updataremain_days","UrlPlayer#updataRemain_days");
-        URLs.put("/updataremain_tradetime","UrlPlayer#updataTradetime");
+        URLs.put("/updatabank","UrlPlayer#updataBank");//made
+        URLs.put("/updatahealth","UrlPlayer#updataHealth");//made
+        URLs.put("/updatareputation","UrlPlayer#updataReputation");//made
+        URLs.put("/updatagoods_contain","UrlPlayer#updataGoods_contain");//made
+        URLs.put("/updataremain_days","UrlPlayer#updataRemain_days");//made
+        URLs.put("/updataremain_tradetime","UrlPlayer#updataTradetime");//made
 
         //Goods_houseUrl
         URLs.put("/getgoods_house","UrlGoods#getBackPackControllor");//made
@@ -37,7 +37,8 @@ public class URLMap {
         //news
         URLs.put("/getnews","UrlNews#getNews");//made
 
-        //
+        //Rank
+        URLs.put("/getRanking","UrlRanking#getRanking");
 
 
 
