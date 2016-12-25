@@ -91,7 +91,8 @@ public class UrlGoods {
 
         goods_house = ServerBuffer.hmpgoods_house.get(Integer.parseInt(hm.get("admin_id")));
 
-
+        //人物物品+1
+        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getGoods_contain()+1);
 
 
 
@@ -217,6 +218,8 @@ public class UrlGoods {
         Goods_house goods_house = ServerBuffer.hmpgoods_house.get(Integer.parseInt(hm.get("admin_id")));
         goods_house.setGoods_contains(String .valueOf(Integer.parseInt(goods_house.getGoods_contains())-1));
 
+        //人物物品-1
+        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getGoods_contain()-1);
         String opstr[][][] = new String[Integer.parseInt(goods_house.getGoods_contains())][4][2];
         opstr = ServerBuffer.hmpgoods_house.get(Integer.parseInt(hm.get("admin_id"))).getGoods_stringarray();
 
@@ -231,10 +234,11 @@ public class UrlGoods {
                 break;
         }
 
-        for( int j = i ; j < s1.length ; j++ ){
+        for( int j = i ; j < s1.length-1 ; j++ ){
             s1[j] = s1[j+1];
             s2[j] = s2[j+1];
             s3[j] = s3[j+1];
+            System.out.println("并没有跳出");
         }
 
 

@@ -2,6 +2,7 @@ package serviceimpl;
 
 import entity.Goods;
 import entity.News;
+import entity.Player;
 import severside.ServerBuffer;
 
 /**新闻事件的结果，物品升降价格，被人偷钱，健康值下降等
@@ -33,11 +34,19 @@ public class News_result {
     public void setHealthEffect(int news_id,int admin_id){
 
         News news = ServerBuffer.hmnews.get(news_id);
+        Player player = ServerBuffer.hmplayer.get(admin_id);
+
+        int current_health = player.getPlayer_health() + news.getEffect_health_point();
+        ServerBuffer.hmplayer.get(admin_id).setPlayer_health(current_health);
 
     }
 
     public void setCashEffect(int news_id,int admin_id){
+
         News news = ServerBuffer.hmnews.get(news_id);
+        Player player = ServerBuffer.hmplayer.get(admin_id);
+        int current_cash = (int)(player.getPlayer_cash() - player.getPlayer_cash()*(news.getEffect_cash_point()*0.01));
+        ServerBuffer.hmplayer.get(admin_id).setPlayer_cash(current_cash);
 
     }
 

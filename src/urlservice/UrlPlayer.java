@@ -143,7 +143,7 @@ public class UrlPlayer {
         //计算
         System.out.println("-----------------------------0-" + player.getPlayer_debt());
         System.out.println("-----------------------------1-" + Integer.parseInt(hm.get("player_debt")));
-        int newdebt = player.getPlayer_debt() - Integer.parseInt(hm.get("player_debt"));
+        int newdebt = player.getPlayer_debt() + Integer.parseInt(hm.get("player_debt"));
         System.out.println(newdebt);
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt(newdebt);
 
@@ -243,7 +243,7 @@ public class UrlPlayer {
     }
 
     /**
-     * key值为"admin_id","player_Reputation"
+     * key值为"admin_id","player_reputation"
      */
     public void updataReputation(HashMap<String,String> hm,OutputStream op){
         /**
@@ -251,11 +251,11 @@ public class UrlPlayer {
          */
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
-        int current_Reputation = player.getPlayer_reputation() + Integer.parseInt(hm.get("player_Reputation"));
+        int current_Reputation = player.getPlayer_reputation() + Integer.parseInt(hm.get("player_reputation"));
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_reputation(current_Reputation);
 
         HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("player_Reputation", String.valueOf(current_Reputation));
+        returnhm.put("player_reputation", String.valueOf(current_Reputation));
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
@@ -274,7 +274,7 @@ public class UrlPlayer {
         /**
          * 读取前端的出租房储物大小,直接设置为现出租房储物大小
          */
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(hm.get("goods_contain"));
+        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(Integer.parseInt(hm.get("goods_contain")));
         HashMap<String, String> returnhm = new HashMap<>();
         returnhm.put("goods_contain", String.valueOf(hm.get("goods_contain")));
 
@@ -335,5 +335,21 @@ public class UrlPlayer {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 获取整个player
+     * @param hm admin_id
+     * @param op
+     */
+    public void getPlayer(HashMap<String,String> hm,OutputStream op){
+        Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+        try {
+            op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(player) + "}").getBytes());
+            op.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
