@@ -9,7 +9,7 @@ public class Goods {
     public String goods_name;
     public int original_price;
     public int multiple;
-    public int isnews;
+    public int isnews;//将isnews临时设置为新闻事件对物品的影响。几倍
     public int goods_sum;
     public boolean sold;
 

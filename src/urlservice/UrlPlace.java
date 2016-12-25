@@ -20,7 +20,7 @@ public class UrlPlace {
 
     /**
      *
-     * @param hashMap place_id ,news_id,
+     * @param hashMap admin_id ,news_id,
      * @param op
      */
     public void getMarket_goods (HashMap<String,String> hashMap ,OutputStream op){
@@ -30,19 +30,30 @@ public class UrlPlace {
             ServerBuffer.hmpgoods.get(i).setSold(false);
         }
 
-        //新闻物品被使用
-        ServerBuffer.hmpgoods.get(ServerBuffer.hmnews.get(Integer.parseInt(hashMap.get("news_id"))).getNews_goods_id()).setSold(true);
-        int random_number = (int)(6+Math.random()*(13-1+1));
-        System.out.println(random_number);
-        String opstr[][][] = new String[random_number][4][2];
 
         //读取新闻
         News news = new News();
         news = ServerBuffer.hmnews.get(Integer.parseInt(hashMap.get("news_id")));
 
+        //随机物品数量
+        int i=0;
+        int random_number = (int) (6 + Math.random() * (13 - 1 + 1));
+        System.out.println(random_number);
+        String opstr[][][] = new String[random_number][4][2];
+
+        //是否加入新闻物品
+        if(news.getNews_id()>0&&news.getNews_id()<17) {
+            i=1;
+            System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+            //新闻物品被使用
+            ServerBuffer.hmpgoods.get(news.getNews_goods_id()).setSold(true);
+            add(ServerBuffer.hmnews.get(Integer.parseInt(hashMap.get("news_id"))).getNews_goods_id(), 0, opstr, news.getEffect_goods_multiple());
+
+        }
+
+
         //随机取物品
-        add(ServerBuffer.hmnews.get(Integer.parseInt(hashMap.get("news_id"))).getNews_goods_id(),0,opstr,news.getEffect_goods_multiple());
-        for(int i = 1 ; i < random_number ; i++){
+        for(; i < random_number ; i++){
             int random_goods = choice();
             int multiple = (int)((-2)+Math.random()*(4-1+1));
             add(random_goods,i,opstr,multiple);
