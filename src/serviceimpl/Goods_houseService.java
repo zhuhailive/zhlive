@@ -55,7 +55,7 @@ public class Goods_houseService extends ServiceBase {
 
 
             goods_house.setAdmin_id(rs.getInt("admin_id"));
-            goods_house.setGoods_contains(rs.getString("goods_contains"));
+            goods_house.setGoods_contains(rs.getInt("goods_contains"));
             goods_house.setGoods_item(rs.getString("goods_item"));
             goods_house.setBuyin_price(rs.getString("buyin_price"));
             goods_house.setGoods_amount(rs.getString("goods_amount"));

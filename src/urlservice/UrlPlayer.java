@@ -2,6 +2,7 @@ package urlservice;
 
 import com.alibaba.fastjson.JSON;
 import entity.Admin;
+import entity.Goods_house;
 import entity.Player;
 import serviceimpl.AdminService;
 import serviceimpl.Goods_houseService;
@@ -53,8 +54,6 @@ public class UrlPlayer {
 
                 //缓存player
                 Player player = ServerBuffer.hmplayer.get(admin.getId());
-
-//                ServerBuffer.hmplayer.put(admin.getId(), player);
 
                 //回传player的表数据、
                 System.out.println("登陆成功");
@@ -114,6 +113,9 @@ public class UrlPlayer {
             //添加player缓存
             Player player = PlayerService.getPlayerService().findById(admin.getId());
             ServerBuffer.hmplayer.put(admin.getId(),player);
+
+            Goods_house goods_house = Goods_houseService.getGoods_houseService().findByAdminId(admin.getId());
+            ServerBuffer.hmpgoods_house.put(admin.getId(),goods_house);
 
             admin.setSign_status("成功注册");
             data = ("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(admin) + "}");

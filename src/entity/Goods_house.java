@@ -6,7 +6,7 @@ package entity;
 public class Goods_house {
 
     private int admin_id;
-    private String goods_contains;
+    private int goods_contains;
     private String goods_item;
     private String buyin_price;
     private String goods_amount;
@@ -37,11 +37,11 @@ public class Goods_house {
         this.admin_id = admin_id;
     }
 
-    public String getGoods_contains() {
+    public int getGoods_contains() {
         return goods_contains;
     }
 
-    public void setGoods_contains(String goods_contains) {
+    public void setGoods_contains(int goods_contains) {
         this.goods_contains = goods_contains;
     }
 

@@ -34,6 +34,7 @@ public class ServerBuffer {
         NewService.getNewService().getNews();
         PlaceService.getPlaceService().getPlace();
         PlayerService.getPlayerService().getPlayerBuffer();
+        
 
         //
 

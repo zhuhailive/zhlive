@@ -37,7 +37,7 @@ public class UrlPlace {
 
         //随机物品数量
         int i=0;
-        int random_number = (int) (6 + Math.random() * (13 - 1 + 1));
+        int random_number = (int) (6 + Math.random() * (10 - 6 + 1));
         System.out.println(random_number);
         String opstr[][][] = new String[random_number][4][2];
 
@@ -75,7 +75,7 @@ public class UrlPlace {
     public void add(int random_goods,int i,String opstr[][][],int multiple){
 
 
-        int random_amount = (int)(1+Math.random()*(9-1+1))*10;
+        int random_amount = (int)(1+Math.random()*(3-1+1))*100;
         opstr[i][0][0] = "goods_id";
         opstr[i][1][0] = "goods_price";
         opstr[i][2][0] = "goods_amount";

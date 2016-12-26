@@ -66,6 +66,7 @@ public class GoodsService extends ServiceBase{
         goods.setGoods_sum(rs.getInt("goods_sum"));
         goods.setMultiple(rs.getInt("multiple"));
         goods.setIsnews(rs.getInt("isnews"));
+        goods.setOriginal_price(rs.getInt("original_price"));
     }
 
 }
