@@ -52,9 +52,9 @@ public class UrlPlayer {
             if (hm.get("admin_password").equals(admin.getAdmin_password())) {
 
                 //缓存player
-                Player player = PlayerService.getPlayerService().findById(admin.getId());
+                Player player = ServerBuffer.hmplayer.get(admin.getId());
 
-                ServerBuffer.hmplayer.put(admin.getId(), player);
+//                ServerBuffer.hmplayer.put(admin.getId(), player);
 
                 //回传player的表数据、
                 System.out.println("登陆成功");
@@ -102,6 +102,8 @@ public class UrlPlayer {
 
             //insert admin 数据库
             AdminService.getAdminService().addAdmin(admin);
+
+            //重新拿出 有id
             admin = AdminService.getAdminService().findByAdminAccount(hm.get("admin_name"));
 
             //insert player 数据库
@@ -109,6 +111,9 @@ public class UrlPlayer {
 
             //insert goods 数据库
             Goods_houseService.getGoods_houseService().addGoods_house(admin);
+            //添加player缓存
+            Player player = PlayerService.getPlayerService().findById(admin.getId());
+            ServerBuffer.hmplayer.put(admin.getId(),player);
 
             admin.setSign_status("成功注册");
             data = ("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(admin) + "}");
