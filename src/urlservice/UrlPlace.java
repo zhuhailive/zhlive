@@ -44,7 +44,7 @@ public class UrlPlace {
         //是否加入新闻物品
         if(news.getNews_id()>0&&news.getNews_id()<17) {
             i=1;
-            System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+//            System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
             //新闻物品被使用
             ServerBuffer.hmpgoods.get(news.getNews_goods_id()).setSold(true);
             add(ServerBuffer.hmnews.get(Integer.parseInt(hashMap.get("news_id"))).getNews_goods_id(), 0, opstr, news.getEffect_goods_multiple());
