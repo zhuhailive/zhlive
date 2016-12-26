@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c7744b9-22a7-4f24-9aed-2e196a059ab2" name="Default" comment="暂时只做了一个返回财产前十名排行榜的类">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/urlservice/UrlRanking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="7c7744b9-22a7-4f24-9aed-2e196a059ab2" name="Default" comment="修复了一些可能出现负数和报错的小Bug">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/urlservice/URLMap.java" afterPath="$PROJECT_DIR$/src/urlservice/URLMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/urlservice/UrlPlayer.java" afterPath="$PROJECT_DIR$/src/urlservice/UrlPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/urlservice/UrlRanking.java" afterPath="$PROJECT_DIR$/src/urlservice/UrlRanking.java" />
     </list>
     <ignored path="HTTP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="UrlPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/urlservice/UrlPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="159" column="9" lean-forward="true" selection-start-line="154" selection-start-column="8" selection-end-line="159" selection-end-column="9" />
+            <state relative-caret-position="620">
+              <caret line="338" column="106" lean-forward="true" selection-start-line="338" selection-start-column="106" selection-end-line="338" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -40,7 +39,7 @@
       <file leaf-file-name="UrlPlace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/urlservice/UrlPlace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1981">
+            <state relative-caret-position="2175">
               <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding />
             </state>
@@ -60,7 +59,7 @@
       <file leaf-file-name="UrlNews.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/urlservice/UrlNews.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="425">
               <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
               <folding />
             </state>
@@ -80,10 +79,9 @@
       <file leaf-file-name="PlayerService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/serviceimpl/PlayerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+            <state relative-caret-position="5700">
+              <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <marker date="1482658079739" expanded="true" signature="1034:1071" ph="SELECT * FRO... player" />
                 <marker date="1482658079739" expanded="true" signature="1981:2033" ph="INSERT INTO player... " />
                 <marker date="1482658079739" expanded="true" signature="2697:2726" ph="DELETE FROM " />
@@ -104,25 +102,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="URLMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="URLMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/urlservice/URLMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="182">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlRanking.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UrlRanking.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/urlservice/UrlRanking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            <state relative-caret-position="570">
+              <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#912#940#0" expanded="true" />
-                <element signature="e#1408#1424#0" expanded="true" />
+                <element signature="e#1407#1423#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,10 +205,10 @@
         <option value="$PROJECT_DIR$/src/serviceimpl/NewService.java" />
         <option value="$PROJECT_DIR$/src/urlservice/UrlPlace.java" />
         <option value="$PROJECT_DIR$/src/serviceimpl/News_result.java" />
-        <option value="$PROJECT_DIR$/src/urlservice/UrlPlayer.java" />
         <option value="$PROJECT_DIR$/src/severside/ServerBuffer.java" />
         <option value="$PROJECT_DIR$/src/serviceimpl/PlayerService.java" />
         <option value="$PROJECT_DIR$/src/urlservice/URLMap.java" />
+        <option value="$PROJECT_DIR$/src/urlservice/UrlPlayer.java" />
         <option value="$PROJECT_DIR$/src/urlservice/UrlRanking.java" />
       </list>
     </option>
@@ -232,8 +230,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1911" />
-    <option name="y" value="-9" />
+    <option name="x" value="170" />
+    <option name="y" value="35" />
     <option name="width" value="2578" />
     <option name="height" value="1458" />
   </component>
@@ -253,8 +251,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,7 +358,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -960,7 +958,12 @@
       <workItem from="1482570709032" duration="5966000" />
       <workItem from="1482589066260" duration="1165000" />
       <workItem from="1482641702405" duration="2684000" />
-      <workItem from="1482653097755" duration="9109000" />
+      <workItem from="1482653097755" duration="9973000" />
+      <workItem from="1482681522082" duration="92000" />
+      <workItem from="1482721034006" duration="36000" />
+      <workItem from="1482737354447" duration="207000" />
+      <workItem from="1482755846093" duration="43000" />
+      <workItem from="1482756877538" duration="497000" />
     </task>
     <task id="LOCAL-00001" summary="011">
       <created>1482319976132</created>
@@ -990,11 +993,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482590016531</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="暂时只做了一个返回财产前十名排行榜的类">
+      <created>1482663008185</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1482663008185</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218729000" />
+    <option name="totallyTimeSpent" value="220468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1006,25 +1016,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1911" y="-9" width="2578" height="1458" extended-state="6" />
+    <frame x="170" y="35" width="2578" height="1458" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21853282" sideWeight="0.49241215" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21853282" sideWeight="0.4908147" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21853282" sideWeight="0.50758785" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21853282" sideWeight="0.5091853" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44053775" sideWeight="0.62191194" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38301158" sideWeight="0.6649361" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21776062" sideWeight="0.48402557" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.4968051" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16613418" sideWeight="0.4848485" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17412141" sideWeight="0.4848485" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1037,7 +1047,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32583067" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32583067" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1077,7 +1087,8 @@
     <MESSAGE value="balabalab" />
     <MESSAGE value="增加了依赖的jar包" />
     <MESSAGE value="暂时只做了一个返回财产前十名排行榜的类" />
-    <option name="LAST_COMMIT_MESSAGE" value="暂时只做了一个返回财产前十名排行榜的类" />
+    <MESSAGE value="修复了一些可能出现负数和报错的小Bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了一些可能出现负数和报错的小Bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1187,9 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1212,9 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1273">
           <caret line="67" column="45" lean-forward="false" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1238,7 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3876">
           <caret line="213" column="36" lean-forward="false" selection-start-line="213" selection-start-column="17" selection-end-line="213" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,9 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="53" column="23" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="53" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1277,10 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7875">
           <caret line="337" column="23" lean-forward="false" selection-start-line="337" selection-start-column="23" selection-end-line="337" selection-end-column="23" />
-          <folding>
-            <element signature="e#2019#2020#0" expanded="false" />
-            <element signature="e#2063#2064#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1320,7 +1317,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/urlservice/UrlNews.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="425">
           <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
@@ -1328,10 +1325,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceimpl/PlayerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+        <state relative-caret-position="5700">
+          <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1482658079739" expanded="true" signature="1034:1071" ph="SELECT * FRO... player" />
             <marker date="1482658079739" expanded="true" signature="1981:2033" ph="INSERT INTO player... " />
             <marker date="1482658079739" expanded="true" signature="2697:2726" ph="DELETE FROM " />
@@ -1341,17 +1337,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/urlservice/UrlPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="159" column="9" lean-forward="true" selection-start-line="154" selection-start-column="8" selection-end-line="159" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/urlservice/UrlPlace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1981">
+        <state relative-caret-position="2175">
           <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding />
         </state>
@@ -1365,23 +1353,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/urlservice/UrlRanking.java">
+    <entry file="file://$PROJECT_DIR$/src/urlservice/URLMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#912#940#0" expanded="true" />
-            <element signature="e#1408#1424#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="182">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/urlservice/URLMap.java">
+    <entry file="file://$PROJECT_DIR$/src/urlservice/UrlPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="620">
+          <caret line="338" column="106" lean-forward="true" selection-start-line="338" selection-start-column="106" selection-end-line="338" selection-end-column="106" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/urlservice/UrlRanking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#912#940#0" expanded="true" />
+            <element signature="e#1407#1423#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

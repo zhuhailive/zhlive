@@ -39,13 +39,18 @@ public class UrlRanking {
         });
 
 
-
         //将前十名存入哈希表中
         HashMap<String,Integer> Rankhm = new HashMap<String,Integer>();
-        for (int i = 0;i < 10;i++){
-            Rankhm.put(list.get(i).getKey(),list.get(i).getValue());
+        if(list.size() >= 10) {
+            for (int i = 0; i < 10; i++) {
+                Rankhm.put(list.get(i).getKey(), list.get(i).getValue());
+            }
+            System.out.print(JSON.toJSONString(Rankhm));
         }
-        System.out.print(JSON.toJSONString(Rankhm));
+        else
+            for (int i = 0; i < list.size(); i++) {
+                Rankhm.put(list.get(i).getKey(), list.get(i).getValue());
+            }
 
         //输出到前端
         try {

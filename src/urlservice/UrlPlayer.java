@@ -176,6 +176,7 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_cash = player.getPlayer_cash() + Integer.parseInt(hm.get("player_cash"));
+        if (current_cash < 0) current_cash = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(current_cash);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -205,6 +206,7 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_bank = player.getPlayer_bank() + Integer.parseInt(hm.get("player_bank"));
+        if (current_bank < 0) current_bank = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_bank(current_bank);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -229,6 +231,7 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_health = player.getPlayer_health() + Integer.parseInt(hm.get("player_health"));
+        if (current_health < 0)  current_health = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_health(current_health);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -252,6 +255,7 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_Reputation = player.getPlayer_reputation() + Integer.parseInt(hm.get("player_Reputation"));
+        if (current_Reputation < 0) current_Reputation = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_reputation(current_Reputation);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -298,6 +302,7 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_remain_days = player.getRemain_days() - 1;
+        if (current_remain_days < 0) current_remain_days = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_days(current_remain_days);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -323,6 +328,7 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_tradetime = player.getRemain_tradetime() - 1;
+        if (current_tradetime < 0) current_tradetime = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_tradetime(current_tradetime);
 
         HashMap<String, String> returnhm = new HashMap<>();
