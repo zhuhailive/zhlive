@@ -11,7 +11,7 @@ public class Player {
     private int player_bank;
     private int player_health;
     private int player_reputation;
-    private String goods_contain;
+    private int goods_contain;
     private int remain_days;
     private int remain_tradetime;
     private String player_status;
@@ -44,11 +44,11 @@ public class Player {
         return id;
     }
 
-    public String getGoods_contain() {
+    public int getGoods_contain() {
         return goods_contain;
     }
 
-    public void setGoods_contain(String goods_contain) {
+    public void setGoods_contain(int goods_contain) {
         this.goods_contain = goods_contain;
     }
 

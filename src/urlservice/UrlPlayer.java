@@ -143,7 +143,7 @@ public class UrlPlayer {
         //计算
         System.out.println("-----------------------------0-" + player.getPlayer_debt());
         System.out.println("-----------------------------1-" + Integer.parseInt(hm.get("player_debt")));
-        int newdebt = player.getPlayer_debt() - Integer.parseInt(hm.get("player_debt"));
+        int newdebt = player.getPlayer_debt() + Integer.parseInt(hm.get("player_debt"));
         System.out.println(newdebt);
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt(newdebt);
 
@@ -176,7 +176,6 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_cash = player.getPlayer_cash() + Integer.parseInt(hm.get("player_cash"));
-        if (current_cash < 0) current_cash = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(current_cash);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -206,7 +205,6 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_bank = player.getPlayer_bank() + Integer.parseInt(hm.get("player_bank"));
-        if (current_bank < 0) current_bank = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_bank(current_bank);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -231,7 +229,6 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_health = player.getPlayer_health() + Integer.parseInt(hm.get("player_health"));
-        if (current_health < 0)  current_health = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_health(current_health);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -246,7 +243,7 @@ public class UrlPlayer {
     }
 
     /**
-     * key值为"admin_id","player_Reputation"
+     * key值为"admin_id","player_reputation"
      */
     public void updataReputation(HashMap<String,String> hm,OutputStream op){
         /**
@@ -254,12 +251,12 @@ public class UrlPlayer {
          */
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
-        int current_Reputation = player.getPlayer_reputation() + Integer.parseInt(hm.get("player_Reputation"));
+        int current_Reputation = player.getPlayer_reputation() + Integer.parseInt(hm.get("player_reputation"));
         if (current_Reputation < 0) current_Reputation = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_reputation(current_Reputation);
 
         HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("player_Reputation", String.valueOf(current_Reputation));
+        returnhm.put("player_reputation", String.valueOf(current_Reputation));
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
@@ -278,7 +275,7 @@ public class UrlPlayer {
         /**
          * 读取前端的出租房储物大小,直接设置为现出租房储物大小
          */
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(hm.get("goods_contain"));
+        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(Integer.parseInt(hm.get("goods_contain")));
         HashMap<String, String> returnhm = new HashMap<>();
         returnhm.put("goods_contain", String.valueOf(hm.get("goods_contain")));
 
@@ -302,7 +299,6 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_remain_days = player.getRemain_days() - 1;
-        if (current_remain_days < 0) current_remain_days = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_days(current_remain_days);
 
         HashMap<String, String> returnhm = new HashMap<>();
@@ -328,7 +324,6 @@ public class UrlPlayer {
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
 
         int current_tradetime = player.getRemain_tradetime() - 1;
-        if (current_tradetime < 0) current_tradetime = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_tradetime(current_tradetime);
 
         HashMap<String, String> returnhm = new HashMap<>();

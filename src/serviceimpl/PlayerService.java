@@ -186,7 +186,7 @@ public class PlayerService extends ServiceBase {
             findUS.setInt(4,player.getPlayer_health());
             findUS.setInt(5,player.getPlayer_reputation());
             findUS.setInt(7,player.getRemain_days());
-            findUS.setString(6,player.getGoods_contain());
+            findUS.setInt(6,player.getGoods_contain());
             findUS.setInt(8,player.getRemain_tradetime());
             findUS.setString(9,player.getAdmin_name());
             findUS.setInt(10,player.getAdmin_id());
@@ -257,7 +257,7 @@ public class PlayerService extends ServiceBase {
         player.setPlayer_cash(rs.getInt("player_cash"));
         player.setPlayer_health(rs.getInt("player_health"));
         player.setPlayer_debt(rs.getInt("player_debt"));
-        player.setGoods_contain(rs.getString("goods_contain"));
+        player.setGoods_contain(rs.getInt("goods_contain"));
         player.setPlayer_reputation(rs.getInt("player_reputation"));
         player.setAdmin_name(rs.getString("admin_name"));
     }
