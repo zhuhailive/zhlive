@@ -226,7 +226,7 @@ public class UrlPlayer {
     }
 
     /**
-     * key值为"admin_id","player_health"
+     * key值为"admin_id","player_health","player_cash"
      */
     public void updataHealth(HashMap<String, String> hm, OutputStream op){
         /**
@@ -237,7 +237,8 @@ public class UrlPlayer {
 
         int current_health = player.getPlayer_health() + Integer.parseInt(hm.get("player_health"));
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_health(current_health);
-
+        //更改钱数
+        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash()-Integer.parseInt(hm.get("player_cash")));
         HashMap<String, String> returnhm = new HashMap<>();
         returnhm.put("player_health", String.valueOf(current_health));
 
