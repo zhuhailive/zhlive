@@ -308,9 +308,11 @@ public class UrlPlayer {
 
         int current_remain_days = player.getRemain_days() - 1;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_days(current_remain_days);
-
+        //利滚利
+        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt((int)(player.getPlayer_debt()+player.getPlayer_debt()*0.1));
         HashMap<String, String> returnhm = new HashMap<>();
         returnhm.put("remain_days", String.valueOf(current_remain_days));
+        returnhm.put("player_debt",String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_debt()));
 
 
         try {
