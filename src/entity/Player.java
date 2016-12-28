@@ -16,6 +16,24 @@ public class Player {
     private int remain_tradetime;
     private String player_status;
     private String admin_name;
+    private int goods_number;
+    private int goods_max;
+
+    public int getGoods_number() {
+        return goods_number;
+    }
+
+    public void setGoods_number(int goods_number) {
+        this.goods_number = goods_number;
+    }
+
+    public int getGoods_max() {
+        return goods_max;
+    }
+
+    public void setGoods_max(int goods_max) {
+        this.goods_max = goods_max;
+    }
 
     public String getAdmin_name() {
         return admin_name;

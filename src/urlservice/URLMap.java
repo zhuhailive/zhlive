@@ -17,15 +17,17 @@ public class URLMap {
         URLs.put("/login","UrlPlayer#adminLoginControllor");//made                                                参数：admin_name,admin_password  返回：
         URLs.put("/sign","UrlPlayer#adminsignControllor");//made                                                   参数：admin_name,admin_password
         URLs.put("/updatacash","UrlPlayer#updataCash");//made                                                        参数：admin_id,admin_cash
-        URLs.put("/updatadebt","UrlPlayer#updataDebt");//made                                                         参数：admin_id,admin_debt 返回： player_debt
-        URLs.put("/updatabank","UrlPlayer#updataBank");//made                                                        参数：admin_id,admin_bank
-        URLs.put("/updatahealth","UrlPlayer#updataHealth");//made                                                   参数：admin_id,admin_health
-        URLs.put("/updatareputation","UrlPlayer#updataReputation");//made                                            参数：admin_id,admin_reputation
+        URLs.put("/updatadebt","UrlPlayer#updataDebt");//made                                                         参数：admin_id,player_debt 返回： player_debt
+        URLs.put("/updatabank","UrlPlayer#updataBank");//made                                                        参数：admin_id,player_bank
+        URLs.put("/updatahealth","UrlPlayer#updataHealth");//made                                                   参数：admin_id,player_health
+        URLs.put("/updatareputation","UrlPlayer#updataReputation");//made                                            参数：admin_id,player_reputation
         URLs.put("/updatagoods_contain","UrlPlayer#updataGoods_contain");//made                                   参数：admin_id,goods_contain
         URLs.put("/updataremain_days","UrlPlayer#updataRemain_days");//made                                        参数：admin_id
         URLs.put("/updataremain_tradetime","UrlPlayer#updataTradetime");//made                                       参数：admin_id
 
-        URLs.put("/getplayer","UrlPlayer#getPlayer");//made                                                              参数：admin_id
+        URLs.put("/getplayer","UrlPlayer#getPlayer");//made//                                                参数：admin_id
+
+        URLs.put("/updatagoods_max","UrlPlayer#updataGoods_max");
 
         //Goods_houseUrl
         URLs.put("/getgoods_house","UrlGoods#getBackPackControllor");//made                                         参数：admin_id
