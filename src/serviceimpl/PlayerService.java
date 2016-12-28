@@ -260,6 +260,8 @@ public class PlayerService extends ServiceBase {
         player.setGoods_contain(rs.getInt("goods_contain"));
         player.setPlayer_reputation(rs.getInt("player_reputation"));
         player.setAdmin_name(rs.getString("admin_name"));
+        player.setGoods_max(rs.getInt("goods_max"));
+        player.setGoods_number(rs.getInt("goods_number"));
     }
 
 }

@@ -214,6 +214,7 @@ public class UrlGoods {
 
         //更新自己的钱数
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_number(player.getGoods_number()+Integer.parseInt(hm.get("goods_amount")));
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(player.getGoods_contain()+1);
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(player.getPlayer_cash()-        ( Integer.parseInt(hm.get("goods_price")) *   Integer.parseInt(hm.get("goods_amount")) )   );
 
@@ -235,7 +236,7 @@ public class UrlGoods {
     public void saleBackPackControllor(HashMap<String,String> hm, OutputStream op){
         String data="";
         String opstr[][][];
-
+        Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
         Goods_house goods_house = ServerBuffer.hmpgoods_house.get(Integer.parseInt(hm.get("admin_id")));
 
 
@@ -309,7 +310,7 @@ public class UrlGoods {
 
             }
             //更新自己的钱数
-            Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+//            Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(player.getGoods_contain()-1);
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(player.getPlayer_cash()+  (saleprice *   Integer.parseInt(hm.get("goods_amount")) )   );
 
@@ -336,7 +337,7 @@ public class UrlGoods {
             }
 
             //更新自己的钱数
-            Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+//            Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(player.getPlayer_cash()+  (saleprice *   Integer.parseInt(hm.get("goods_amount")) )   );
         }
 
@@ -351,6 +352,8 @@ public class UrlGoods {
         System.out.println(newgoods_price);
         System.out.println(newgoods_amount);
 
+
+        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_number(player.getGoods_number()-Integer.parseInt(hm.get("goods_amount")));
         //更新goods_house缓存
         ServerBuffer.hmpgoods_house.get(Integer.parseInt(hm.get("admin_id"))).setGoods_item(newgoods_item);
         ServerBuffer.hmpgoods_house.get(Integer.parseInt(hm.get("admin_id"))).setBuyin_price(newgoods_price);
