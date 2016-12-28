@@ -177,7 +177,7 @@ public class PlayerService extends ServiceBase {
         try {
 
             //编译语句
-            findUS = conn.prepareStatement("UPDATE player SET player_cash=?, player_debt=?, player_bank=?, player_heralth=?, player_reputation=?, goods_contain=?, remain_days=?, ramain_tradetime=? ,admin_name=? WHERE admin_id=?");
+            findUS = conn.prepareStatement("UPDATE player SET player_cash=?, player_debt=?, player_bank=?, player_heralth=?, player_reputation=?, goods_contain=?, remain_days=?, ramain_tradetime=? ,admin_name=? ,goods_number=? , goods_max=? WHERE admin_id=?");
 //            findUS = conn.prepareStatement("DELETE FROM player WHERE id=?");
             //对sql变量赋值
             findUS.setInt(1,player.getPlayer_cash());
@@ -189,7 +189,9 @@ public class PlayerService extends ServiceBase {
             findUS.setInt(6,player.getGoods_contain());
             findUS.setInt(8,player.getRemain_tradetime());
             findUS.setString(9,player.getAdmin_name());
-            findUS.setInt(10,player.getAdmin_id());
+            findUS.setInt(10,player.getGoods_number());
+            findUS.setInt(11,player.getGoods_max());
+            findUS.setInt(12,player.getAdmin_id());
 
 
             ResultSet rs = findUS.executeQuery();

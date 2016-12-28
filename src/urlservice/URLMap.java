@@ -17,9 +17,11 @@ public class URLMap {
         URLs.put("/login","UrlPlayer#adminLoginControllor");//made                                                参数：admin_name,admin_password  返回：
         URLs.put("/sign","UrlPlayer#adminsignControllor");//made                                                   参数：admin_name,admin_password
         URLs.put("/updatacash","UrlPlayer#updataCash");//made                                                        参数：admin_id,admin_cash
-        URLs.put("/updatadebt","UrlPlayer#updataDebt");//made                                                         参数：admin_id,player_debt 返回： player_debt
-        URLs.put("/updatabank","UrlPlayer#updataBank");//made                                                        参数：admin_id,player_bank
-        URLs.put("/updatahealth","UrlPlayer#updataHealth");//made                                                   参数：admin_id,player_health
+        URLs.put("/updatadebt","UrlPlayer#updataDebt");//made                                                         参数：admin_id , player_debt  返回： player_debt , query:现金不够 或者 还债成功
+        URLs.put("/updatabank","UrlPlayer#updataBank");//made                                                        参数：admin_id ,player_bank  返回：player_bank ， query：现金不够 或者 存钱成功
+        URLs.put("/updatahealth","UrlPlayer#updataHealth");//made                                                   参数：admin_id,player_health  返回：player_health query:现金不够 或者 治疗成功
+
+
         URLs.put("/updatareputation","UrlPlayer#updataReputation");//made                                            参数：admin_id,player_reputation
         URLs.put("/updatagoods_contain","UrlPlayer#updataGoods_contain");//made                                   参数：admin_id,goods_contain
         URLs.put("/updataremain_days","UrlPlayer#updataRemain_days");//made                                        参数：admin_id
