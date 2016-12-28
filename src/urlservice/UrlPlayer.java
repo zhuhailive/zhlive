@@ -145,19 +145,20 @@ public class UrlPlayer {
     public void updataDebt(HashMap<String, String> hm, OutputStream op) {
 
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
-
-
-        //计算
-        System.out.println("-----------------------------0-" + player.getPlayer_debt());
-        System.out.println("-----------------------------1-" + Integer.parseInt(hm.get("player_debt")));
-        int newdebt = player.getPlayer_debt() + Integer.parseInt(hm.get("player_debt"));
-        System.out.println(newdebt);
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt(newdebt);
-
-
         HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("player_debt", String.valueOf(newdebt));
 
+        int newdebt = player.getPlayer_debt() + Integer.parseInt(hm.get("player_cash"));
+
+        if (Integer.parseInt(hm.get("player_cash")) > ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash()){
+            returnhm.put("player_debt", String.valueOf(player.getPlayer_debt()));
+            returnhm.put("query","现金不够");
+        }
+        else{
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt(newdebt);
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(player.getPlayer_cash() + Integer.parseInt(hm.get("player_cash")));
+            returnhm.put("player_debt", String.valueOf(newdebt));
+            returnhm.put("query", "还债成功");
+        }
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
@@ -181,12 +182,15 @@ public class UrlPlayer {
          */
 
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+        HashMap<String, String> returnhm = new HashMap<>();
 
         int current_cash = player.getPlayer_cash() + Integer.parseInt(hm.get("player_cash"));
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(current_cash);
-
-        HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("player_cash", String.valueOf(current_cash));
+        if(current_cash < 0)
+            returnhm.put("query", "现金不够");
+        else {
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(current_cash);
+            returnhm.put("player_cash", String.valueOf(current_cash));
+        }
 
 
         try {
@@ -210,13 +214,23 @@ public class UrlPlayer {
          *
          */
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
-
-        int current_bank = player.getPlayer_bank() + Integer.parseInt(hm.get("player_bank"));
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_bank(current_bank);
-
         HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("player_bank", String.valueOf(current_bank));
 
+        if (Integer.parseInt(hm.get("player_bank")) > player.getPlayer_cash()){
+            returnhm.put("player_bank", String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_bank()));
+            returnhm.put("query", "现金不够,存钱失败");
+        }
+        else if (Integer.parseInt(hm.get("player_bank")) + player.getPlayer_bank() < 0){
+            returnhm.put("player_bank", String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_bank()));
+            returnhm.put("query", "存款不足，取钱失败");
+        }
+        else {
+            int current_bank = player.getPlayer_bank() + Integer.parseInt(hm.get("player_bank"));
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_bank(current_bank);
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(player.getPlayer_cash() - Integer.parseInt(hm.get("player_bank")));
+            returnhm.put("player_bank",String.valueOf(current_bank));
+            returnhm.put("query", "操作成功");
+        }
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
             op.close();
@@ -234,14 +248,21 @@ public class UrlPlayer {
          *
          */
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
-
-        int current_health = player.getPlayer_health() + Integer.parseInt(hm.get("player_health"));
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_health(current_health);
-        //更改钱数
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash()-Integer.parseInt(hm.get("player_cash")));
         HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("player_health", String.valueOf(current_health));
 
+        if (Integer.parseInt(hm.get("player_cash")) > player.getPlayer_cash()){
+            returnhm.put("player_health", String.valueOf(player.getPlayer_health()));
+            returnhm.put("query", "操作失败，现金不足");
+        }
+        else {
+            int current_health = player.getPlayer_health() + Integer.parseInt(hm.get("player_health"));
+            if (current_health > 100) current_health = 100;
+            if (current_health < 0) current_health = 0;
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_health(current_health);
+            //更改钱数
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash() - Integer.parseInt(hm.get("player_cash")));
+            returnhm.put("player_health", String.valueOf(current_health));
+        }
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
             op.close();
@@ -258,12 +279,12 @@ public class UrlPlayer {
          * 读取前端发送来的名声信息，正数为涨声望，负数为跌声望，返回现名声值
          */
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+        HashMap<String, String> returnhm = new HashMap<>();
 
         int current_Reputation = player.getPlayer_reputation() + Integer.parseInt(hm.get("player_reputation"));
-        if (current_Reputation < 0) current_Reputation = 0;
         ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_reputation(current_Reputation);
 
-        HashMap<String, String> returnhm = new HashMap<>();
+
         returnhm.put("player_reputation", String.valueOf(current_Reputation));
 
         try {
@@ -276,16 +297,27 @@ public class UrlPlayer {
 
     /**
      *
-     * @param hm key值为"admin_id","goods_contain"
+     * @param hm key值为"admin_id","goods_contain","player_cash"
      * @param op
      */
     public void updataGoods_contain(HashMap<String,String> hm,OutputStream op){
         /**
-         * 读取前端的出租房储物大小,直接设置为现出租房储物大小
+         * 读取前端的出租房储物大小,直接设置为现出租房储物大小，并减去现金数
          */
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(Integer.parseInt(hm.get("goods_contain")));
+        Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
         HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("goods_contain", String.valueOf(hm.get("goods_contain")));
+
+         //判断现金是否足够购买新的出租屋,不够则返回原本的租房容量
+        if (player.getPlayer_cash() < Integer.parseInt(hm.get("player_cash"))){
+            returnhm.put("goods_contain",String.valueOf(player.getGoods_contain()));
+            returnhm.put("query","现金不足，操作失败");
+        }
+        else {
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash() - Integer.parseInt(hm.get("player_cash")));
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setGoods_contain(Integer.parseInt(hm.get("goods_contain")));
+            returnhm.put("goods_contain", String.valueOf(hm.get("goods_contain")));
+        }
+
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
@@ -305,15 +337,18 @@ public class UrlPlayer {
          * 每次请求则该id对应的用户还债期限减一天
          */
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+        HashMap<String, String> returnhm = new HashMap<>();
 
         int current_remain_days = player.getRemain_days() - 1;
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_days(current_remain_days);
-        //利滚利
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt((int)(player.getPlayer_debt()+player.getPlayer_debt()*0.1));
-        HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("remain_days", String.valueOf(current_remain_days));
-        returnhm.put("player_debt",String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_debt()));
-
+        if (current_remain_days < 0)
+            returnhm.put("query","404");
+        else {
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_days(current_remain_days);
+            //利滚利
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt((int) (player.getPlayer_debt() + player.getPlayer_debt() * 0.1));
+            returnhm.put("remain_days", String.valueOf(current_remain_days));
+            returnhm.put("player_debt", String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_debt()));
+        }
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
@@ -332,14 +367,17 @@ public class UrlPlayer {
          * 每次请求则id对应的用户交易剩余次数减去一次
          */
         Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+        HashMap<String, String> returnhm = new HashMap<>();
 
         int current_tradetime = player.getRemain_tradetime() - 1;
-        ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_tradetime(current_tradetime);
+        if (current_tradetime < 0){
+            returnhm.put("query","交易次数达到上限");
+        }
+        else {
+            ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_tradetime(current_tradetime);
+            returnhm.put("remain_tradetime", String.valueOf(current_tradetime));
+        }
 
-        HashMap<String, String> returnhm = new HashMap<>();
-        returnhm.put("remain_tradetime",String.valueOf(current_tradetime));
-
-        System.out.print(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getRemain_tradetime());
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
             op.close();
