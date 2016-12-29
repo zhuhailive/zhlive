@@ -18,6 +18,15 @@ public class Player {
     private String admin_name;
     private int goods_number;
     private int goods_max;
+    private int login_status;
+
+    public int getLogin_status() {
+        return login_status;
+    }
+
+    public void setLogin_status(int login_status) {
+        this.login_status = login_status;
+    }
 
     public int getGoods_number() {
         return goods_number;

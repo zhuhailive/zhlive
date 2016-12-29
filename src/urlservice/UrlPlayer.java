@@ -42,6 +42,7 @@ public class UrlPlayer {
 
         //并没有注册过
         if (admin == null) {
+            returnhm.put("login_status","0");
             returnhm.put("player_status", "用户不存在");
             data = ("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}");
         }
@@ -58,6 +59,7 @@ public class UrlPlayer {
                 //回传player的表数据、
                 System.out.println("登陆成功");
                 player.setPlayer_status("登陆成功");
+                player.setLogin_status(1);
 
                 data = ("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(player) + "}");
 
@@ -67,6 +69,7 @@ public class UrlPlayer {
 
                 //密码不匹配
                 returnhm.put("player_status", "密码不正确");
+                returnhm.put("login_status","2");
                 data = ("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}");
             }
         }
@@ -121,7 +124,7 @@ public class UrlPlayer {
             data = ("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(admin) + "}");
 
         } else {
-            returnhm.put("admin_name", "");
+            returnhm.put("admin_name", hm.get("admin_name"));
             returnhm.put("sign_status", "用户已存在");
             data = ("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}");
         }
@@ -152,12 +155,14 @@ public class UrlPlayer {
         if (Integer.parseInt(hm.get("player_cash")) > ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash()){
             returnhm.put("player_debt", String.valueOf(player.getPlayer_debt()));
             returnhm.put("query","现金不够");
+            returnhm.put("player_cash",String.valueOf(player.getPlayer_cash()));
         }
         else{
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt(newdebt);
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(player.getPlayer_cash() + Integer.parseInt(hm.get("player_cash")));
             returnhm.put("player_debt", String.valueOf(newdebt));
             returnhm.put("query", "还债成功");
+            returnhm.put("player_cash",String.valueOf(player.getPlayer_cash()));
         }
 
         try {
@@ -219,10 +224,12 @@ public class UrlPlayer {
         if (Integer.parseInt(hm.get("player_bank")) > player.getPlayer_cash()){
             returnhm.put("player_bank", String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_bank()));
             returnhm.put("query", "现金不够,存钱失败");
+            returnhm.put("player_cash",String.valueOf(player.getPlayer_cash()));
         }
         else if (Integer.parseInt(hm.get("player_bank")) + player.getPlayer_bank() < 0){
             returnhm.put("player_bank", String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_bank()));
             returnhm.put("query", "存款不足，取钱失败");
+            returnhm.put("player_cash",String.valueOf(player.getPlayer_cash()));
         }
         else {
             int current_bank = player.getPlayer_bank() + Integer.parseInt(hm.get("player_bank"));
@@ -230,6 +237,7 @@ public class UrlPlayer {
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(player.getPlayer_cash() - Integer.parseInt(hm.get("player_bank")));
             returnhm.put("player_bank",String.valueOf(current_bank));
             returnhm.put("query", "操作成功");
+            returnhm.put("player_cash",String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash()));
         }
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
@@ -253,6 +261,7 @@ public class UrlPlayer {
         if (Integer.parseInt(hm.get("player_cash")) > player.getPlayer_cash()){
             returnhm.put("player_health", String.valueOf(player.getPlayer_health()));
             returnhm.put("query", "操作失败，现金不足");
+            returnhm.put("player_cash",String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash()));
         }
         else {
             int current_health = player.getPlayer_health() + Integer.parseInt(hm.get("player_health"));
@@ -262,6 +271,8 @@ public class UrlPlayer {
             //更改钱数
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_cash(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash() - Integer.parseInt(hm.get("player_cash")));
             returnhm.put("player_health", String.valueOf(current_health));
+            returnhm.put("player_cash",String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_cash()));
+            returnhm.put("query","治疗成功");
         }
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
@@ -348,6 +359,7 @@ public class UrlPlayer {
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setPlayer_debt((int) (player.getPlayer_debt() + player.getPlayer_debt() * 0.1));
             returnhm.put("remain_days", String.valueOf(current_remain_days));
             returnhm.put("player_debt", String.valueOf(ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).getPlayer_debt()));
+            returnhm.put("query","过了一天");
         }
 
         try {
@@ -376,6 +388,7 @@ public class UrlPlayer {
         else {
             ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id"))).setRemain_tradetime(current_tradetime);
             returnhm.put("remain_tradetime", String.valueOf(current_tradetime));
+            returnhm.put("query","交易成功");
         }
 
         try {
