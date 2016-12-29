@@ -177,7 +177,7 @@ public class PlayerService extends ServiceBase {
         try {
 
             //编译语句
-            findUS = conn.prepareStatement("UPDATE player SET player_cash=?, player_debt=?, player_bank=?, player_heralth=?, player_reputation=?, goods_contain=?, remain_days=?, ramain_tradetime=? ,admin_name=? ,goods_number=? , goods_max=? WHERE admin_id=?");
+            findUS = conn.prepareStatement("UPDATE player SET player_cash=?, player_debt=?, player_bank=?, player_health=?, player_reputation=?, goods_contain=?, remain_days=?, remain_tradetime=? ,admin_name=? ,goods_number=? , goods_max=? WHERE admin_id=?");
 //            findUS = conn.prepareStatement("DELETE FROM player WHERE id=?");
             //对sql变量赋值
             findUS.setInt(1,player.getPlayer_cash());
@@ -194,11 +194,11 @@ public class PlayerService extends ServiceBase {
             findUS.setInt(12,player.getAdmin_id());
 
 
-            ResultSet rs = findUS.executeQuery();
+            findUS.execute();
 
             //关闭结果集和连接
             findUS.close();
-            rs.close();
+
 
 
         } catch (SQLException e) {
@@ -223,13 +223,14 @@ public class PlayerService extends ServiceBase {
 
             ResultSet rs = findUS.executeQuery();
 
-
+            int i = 1;
             while (rs.next()) {
+                System.out.println(i++);
                 Player player= new Player();
 
                 userDataSet(player, rs);
                 ServerBuffer.hmplayer.put(player.getAdmin_id(), player);
-//                System.out.println(player.getAdmin_name());
+                System.out.println(player.getAdmin_id()+"---"+player.getAdmin_name());
 
             }
 //            System.out.println(ServerBuffer.hmplayer.size());

@@ -10,7 +10,7 @@ public class Goods_house {
     private String goods_item;
     private String buyin_price;
     private String goods_amount;
-    private String[][][] goods_stringarray = new String[100][4][2];
+    private String[][][] goods_stringarray ;
     private int goods_max;
 
     public int getGoods_max() {
