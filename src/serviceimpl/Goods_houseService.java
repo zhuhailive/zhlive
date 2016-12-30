@@ -10,7 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
+/**连接数据库进行操作
  * Created by keben on 2016/12/21.
  */
 public class Goods_houseService extends ServiceBase {

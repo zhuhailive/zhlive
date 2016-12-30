@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Timer;
 
 /**
+ * 缓存类，存放缓存，提供计时器更新数据库
  * Created by keben on 2016/12/20.
  */
 public class ServerBuffer {
@@ -37,7 +38,7 @@ public class ServerBuffer {
 
         //定时上次缓存
         Timer timer = new Timer();
-        timer.schedule(new MyTask(),1000,10000);
+        timer.schedule(new MyTask(),1000,20000);
 
 
 

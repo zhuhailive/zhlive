@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
+/** 连接数据库进行操作
  * Created by keben on 2016/12/20.
  */
 public class AdminService extends ServiceBase{

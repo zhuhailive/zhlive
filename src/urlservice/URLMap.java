@@ -30,7 +30,7 @@ public class URLMap {
          * ("sign_status", "用户已存在");
          */
         URLs.put("/updatacash","UrlPlayer#updataCash");//made                                                        参数：admin_id,admin_cash
-        URLs.put("/updatadebt","UrlPlayer#updataDebt");//made                                                         参数：admin_id , player_debt  返回： player_debt ,player_cash query:现金不够 或者 还债成功
+        URLs.put("/updatadebt","UrlPlayer#updataDebt");//made                                                         参数：admin_id , player_cash  返回： player_debt ,player_cash query:现金不够 或者 还债成功
         URLs.put("/updatabank","UrlPlayer#updataBank");//made                                                        参数：admin_id ,player_bank  返回：player_bank ，,player_cash query：现金不够,存钱失败 或者 存款不足，取钱失败 或者 操作成功
         URLs.put("/updatahealth","UrlPlayer#updataHealth");//made                                                   参数：admin_id,player_health  返回：player_health ,player_cash query:操作失败，现金不足 或者 治疗成功
 

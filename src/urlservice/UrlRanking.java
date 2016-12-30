@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.*;
 
-/**
+/**排行榜url所对应的方法 controllor
  * Created by Jim on 2016/12/25.
  */
 public class UrlRanking {

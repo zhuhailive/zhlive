@@ -7,13 +7,10 @@ import org.apache.commons.pool2.impl.DefaultPooledObject;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-import static connectionpool.MysqlConfig.password;
-import static connectionpool.MysqlConfig.url;
-import static connectionpool.MysqlConfig.username;
-import static connectionpool.MysqlConfig.*;
 
 
-/**
+
+/**数据库连接池的数据库连接参数
  * Created by Admini on 2016/12/13.
  */
 public class ConnFactory extends BasePooledObjectFactory<Connection> {

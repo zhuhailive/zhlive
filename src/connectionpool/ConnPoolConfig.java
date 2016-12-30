@@ -1,4 +1,7 @@
 package connectionpool;
+/**
+ * 连接池属性
+ */
 
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 

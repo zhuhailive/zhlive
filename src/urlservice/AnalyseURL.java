@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 类方法的反射机制
  * Created by Admini on 2016/12/19.
  */
 public class AnalyseURL {

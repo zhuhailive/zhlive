@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashMap;
 
-/**处理place的url
+/**请求地点所卖物品url所对应的方法 controllor
  * Created by keben on 2016/12/21.
  */
 
@@ -62,6 +62,7 @@ public class UrlPlace {
         try {
 
             op.write(("{\"c2array\":true,\"size\":["+ random_number +","+ 4 +","+ 2 +"],\"data\":"+ JSON.toJSONString(opstr) +"}").getBytes());
+            op.flush();
             op.close();
 
         } catch (IOException e) {

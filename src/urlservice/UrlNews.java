@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashMap;
 
-/**
+/**请求新闻url所对应的方法 controllor
  * Created by keben on 2016/12/23.
  */
 public class UrlNews {
@@ -47,6 +47,7 @@ public class UrlNews {
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnha) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();

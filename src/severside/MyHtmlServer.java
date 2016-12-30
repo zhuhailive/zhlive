@@ -1,4 +1,7 @@
-package severside; /**
+package severside;
+/**
+ *
+ * 主运行类，服务器开启之后会连接腾讯云数据库，服务器占用的是80端口
  * @author keben
  * @Time 2016-11-3
  */

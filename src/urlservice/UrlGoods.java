@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
+ * 请求物品url所对应的方法 controllor
  * Created by keben on 2016/12/22.
  */
 public class UrlGoods {
@@ -79,6 +80,7 @@ public class UrlGoods {
 
         try {
             op.write(data.getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -220,6 +222,7 @@ public class UrlGoods {
 
         try {
             op.write(data.getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -372,6 +375,7 @@ public class UrlGoods {
 
         try {
             op.write(data.getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();

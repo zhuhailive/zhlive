@@ -14,7 +14,7 @@ import java.io.OutputStream;
 import java.util.HashMap;
 
 /**
- * 处理player 的url
+ * 请求玩家数据url所对应的方法 controllor
  * Created by keben on 2016/12/20.
  */
 public class UrlPlayer {
@@ -76,6 +76,7 @@ public class UrlPlayer {
         try {
 
             op.write(data.getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -131,6 +132,7 @@ public class UrlPlayer {
 
         try {
             op.write(data.getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -167,6 +169,7 @@ public class UrlPlayer {
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -200,6 +203,7 @@ public class UrlPlayer {
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -241,6 +245,7 @@ public class UrlPlayer {
         }
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -276,6 +281,7 @@ public class UrlPlayer {
         }
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -300,6 +306,7 @@ public class UrlPlayer {
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -332,6 +339,7 @@ public class UrlPlayer {
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -364,6 +372,7 @@ public class UrlPlayer {
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -393,6 +402,18 @@ public class UrlPlayer {
 
         try {
             op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(returnhm) + "}").getBytes());
+            op.flush();
+            op.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void getPlayer(HashMap<String,String> hm,OutputStream op){
+        Player player = ServerBuffer.hmplayer.get(Integer.parseInt(hm.get("admin_id")));
+        try {
+            op.write(("{\"c2dictionary\":true,\"data\":" + JSON.toJSONString(player) + "}").getBytes());
+            op.flush();
             op.close();
         } catch (IOException e) {
             e.printStackTrace();
